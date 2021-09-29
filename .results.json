@@ -1,0 +1,344 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 14,
+    "passes": 0,
+    "pending": 0,
+    "failures": 14,
+    "start": "2021-09-29T17:33:34.265Z",
+    "end": "2021-09-29T17:33:34.347Z",
+    "duration": 82
+  },
+  "tests": [
+    {
+      "title": "renders at least one <MovieCard /> component",
+      "fullTitle": "<MovieShowcase /> renders at least one <MovieCard /> component",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected false to equal true",
+        "showDiff": true,
+        "actual": "false",
+        "expected": "true",
+        "stack": "AssertionError: expected false to equal true\n    at Context.<anonymous> (test/0-MovieShowcase.test.js:21:31)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    },
+    {
+      "title": "renders 9 <MovieCard /> components",
+      "fullTitle": "<MovieShowcase /> renders 9 <MovieCard /> components",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected { length: 0 } to have a length of 9 but got 0",
+        "showDiff": true,
+        "actual": "0",
+        "expected": "9",
+        "stack": "AssertionError: expected { length: 0 } to have a length of 9 but got 0\n    at Context.<anonymous> (test/0-MovieShowcase.test.js:25:27)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    },
+    {
+      "title": "passes all 4 props to every component",
+      "fullTitle": "<MovieShowcase /> passes all 4 props to every component",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected false to equal true",
+        "showDiff": true,
+        "actual": "false",
+        "expected": "true",
+        "stack": "AssertionError: expected false to equal true\n    at Context.<anonymous> (test/0-MovieShowcase.test.js:29:31)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    },
+    {
+      "title": "has generated the correct prop values for the first movie",
+      "fullTitle": "<MovieShowcase /> has generated the correct prop values for the first movie",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'Choux and Maru go to Istanbul'",
+        "showDiff": true,
+        "expected": "Choux and Maru go to Istanbul",
+        "stack": "AssertionError: expected undefined to equal 'Choux and Maru go to Istanbul'\n    at Context.<anonymous> (test/0-MovieShowcase.test.js:39:42)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    },
+    {
+      "title": "has generated the correct prop values for the last movie",
+      "fullTitle": "<MovieShowcase /> has generated the correct prop values for the last movie",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'The Trash Man'",
+        "showDiff": true,
+        "expected": "The Trash Man",
+        "stack": "AssertionError: expected undefined to equal 'The Trash Man'\n    at Context.<anonymous> (test/0-MovieShowcase.test.js:46:43)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    },
+    {
+      "title": "assigns a default prop of 'Unknown' for the title prop",
+      "fullTitle": "<MovieCard /> assigns a default prop of 'Unknown' for the title prop",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read properties of undefined (reading 'title')\n    at Context.<anonymous> (test/1-MovieCard.test.js:15:35)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "Cannot read properties of undefined (reading 'title')"
+      }
+    },
+    {
+      "title": "assigns a default prop of null for the IMDBRating prop",
+      "fullTitle": "<MovieCard /> assigns a default prop of null for the IMDBRating prop",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read properties of undefined (reading 'IMDBRating')\n    at Context.<anonymous> (test/1-MovieCard.test.js:19:35)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "Cannot read properties of undefined (reading 'IMDBRating')"
+      }
+    },
+    {
+      "title": "assigns a default prop of ['No Genre(s) Found'] for the genres prop",
+      "fullTitle": "<MovieCard /> assigns a default prop of ['No Genre(s) Found'] for the genres prop",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read properties of undefined (reading 'genres')\n    at Context.<anonymous> (test/1-MovieCard.test.js:23:50)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "Cannot read properties of undefined (reading 'genres')"
+      }
+    },
+    {
+      "title": "assigns a default prop of 'default' for the poster prop",
+      "fullTitle": "<MovieCard /> assigns a default prop of 'default' for the poster prop",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read properties of undefined (reading 'poster')\n    at Context.<anonymous> (test/1-MovieCard.test.js:27:35)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "Cannot read properties of undefined (reading 'poster')"
+      }
+    },
+    {
+      "title": "uses the poster prop as a background image, rendering only the necessary HTML",
+      "fullTitle": "<CardFront /> uses the poster prop as a background image, rendering only the necessary HTML",
+      "duration": 5,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '<div class=\"card-front\" style=\"background-image:url()\"></div>' to equal '<div class=\"card-front\" style=\"background-image:url(you spin me right round)\"></div>'",
+        "showDiff": true,
+        "actual": "<div class=\"card-front\" style=\"background-image:url()\"></div>",
+        "expected": "<div class=\"card-front\" style=\"background-image:url(you spin me right round)\"></div>",
+        "stack": "AssertionError: expected '<div class=\"card-front\" style=\"background-image:url()\"></div>' to equal '<div class=\"card-front\" style=\"background-image:url(you spin me right round)\"></div>'\n    at Context.<anonymous> (test/2-CardFront.test.js:15:33)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    },
+    {
+      "title": "correctly renders the title prop",
+      "fullTitle": "<CardBack /> correctly renders the title prop",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '' to include 'Rolling in the Deep'",
+        "showDiff": false,
+        "actual": "",
+        "stack": "AssertionError: expected '' to include 'Rolling in the Deep'\n    at Context.<anonymous> (test/3-CardBack.test.js:24:21)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    },
+    {
+      "title": "correctly renders the genres prop as comma seperated strings",
+      "fullTitle": "<CardBack /> correctly renders the genres prop as comma seperated strings",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '' to include 'Never gonna give you up, Never gonna let you down, Never gonna run around and desert you'",
+        "showDiff": false,
+        "actual": "",
+        "stack": "AssertionError: expected '' to include 'Never gonna give you up, Never gonna let you down, Never gonna run around and desert you'\n    at Context.<anonymous> (test/3-CardBack.test.js:28:21)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    },
+    {
+      "title": "renders 'No Rating Found' in an <h4> if the IMDBRating prop is null",
+      "fullTitle": "<CardBack /> renders 'No Rating Found' in an <h4> if the IMDBRating prop is null",
+      "duration": 5,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Method “text” is only meant to be run on a single node. 0 found instead.\n    at ShallowWrapper.single (node_modules/enzyme/build/ShallowWrapper.js:1618:17)\n    at ShallowWrapper.text (node_modules/enzyme/build/ShallowWrapper.js:844:21)\n    at Context.<anonymous> (test/3-CardBack.test.js:33:34)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "Method “text” is only meant to be run on a single node. 0 found instead."
+      }
+    },
+    {
+      "title": "renders an <img> tag if the IMDBRating prop is valid",
+      "fullTitle": "<CardBack /> renders an <img> tag if the IMDBRating prop is valid",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected false to equal true",
+        "showDiff": true,
+        "actual": "false",
+        "expected": "true",
+        "stack": "AssertionError: expected false to equal true\n    at Context.<anonymous> (test/3-CardBack.test.js:37:46)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "renders at least one <MovieCard /> component",
+      "fullTitle": "<MovieShowcase /> renders at least one <MovieCard /> component",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected false to equal true",
+        "showDiff": true,
+        "actual": "false",
+        "expected": "true",
+        "stack": "AssertionError: expected false to equal true\n    at Context.<anonymous> (test/0-MovieShowcase.test.js:21:31)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    },
+    {
+      "title": "renders 9 <MovieCard /> components",
+      "fullTitle": "<MovieShowcase /> renders 9 <MovieCard /> components",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected { length: 0 } to have a length of 9 but got 0",
+        "showDiff": true,
+        "actual": "0",
+        "expected": "9",
+        "stack": "AssertionError: expected { length: 0 } to have a length of 9 but got 0\n    at Context.<anonymous> (test/0-MovieShowcase.test.js:25:27)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    },
+    {
+      "title": "passes all 4 props to every component",
+      "fullTitle": "<MovieShowcase /> passes all 4 props to every component",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected false to equal true",
+        "showDiff": true,
+        "actual": "false",
+        "expected": "true",
+        "stack": "AssertionError: expected false to equal true\n    at Context.<anonymous> (test/0-MovieShowcase.test.js:29:31)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    },
+    {
+      "title": "has generated the correct prop values for the first movie",
+      "fullTitle": "<MovieShowcase /> has generated the correct prop values for the first movie",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'Choux and Maru go to Istanbul'",
+        "showDiff": true,
+        "expected": "Choux and Maru go to Istanbul",
+        "stack": "AssertionError: expected undefined to equal 'Choux and Maru go to Istanbul'\n    at Context.<anonymous> (test/0-MovieShowcase.test.js:39:42)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    },
+    {
+      "title": "has generated the correct prop values for the last movie",
+      "fullTitle": "<MovieShowcase /> has generated the correct prop values for the last movie",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'The Trash Man'",
+        "showDiff": true,
+        "expected": "The Trash Man",
+        "stack": "AssertionError: expected undefined to equal 'The Trash Man'\n    at Context.<anonymous> (test/0-MovieShowcase.test.js:46:43)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    },
+    {
+      "title": "assigns a default prop of 'Unknown' for the title prop",
+      "fullTitle": "<MovieCard /> assigns a default prop of 'Unknown' for the title prop",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read properties of undefined (reading 'title')\n    at Context.<anonymous> (test/1-MovieCard.test.js:15:35)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "Cannot read properties of undefined (reading 'title')"
+      }
+    },
+    {
+      "title": "assigns a default prop of null for the IMDBRating prop",
+      "fullTitle": "<MovieCard /> assigns a default prop of null for the IMDBRating prop",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read properties of undefined (reading 'IMDBRating')\n    at Context.<anonymous> (test/1-MovieCard.test.js:19:35)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "Cannot read properties of undefined (reading 'IMDBRating')"
+      }
+    },
+    {
+      "title": "assigns a default prop of ['No Genre(s) Found'] for the genres prop",
+      "fullTitle": "<MovieCard /> assigns a default prop of ['No Genre(s) Found'] for the genres prop",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read properties of undefined (reading 'genres')\n    at Context.<anonymous> (test/1-MovieCard.test.js:23:50)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "Cannot read properties of undefined (reading 'genres')"
+      }
+    },
+    {
+      "title": "assigns a default prop of 'default' for the poster prop",
+      "fullTitle": "<MovieCard /> assigns a default prop of 'default' for the poster prop",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read properties of undefined (reading 'poster')\n    at Context.<anonymous> (test/1-MovieCard.test.js:27:35)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "Cannot read properties of undefined (reading 'poster')"
+      }
+    },
+    {
+      "title": "uses the poster prop as a background image, rendering only the necessary HTML",
+      "fullTitle": "<CardFront /> uses the poster prop as a background image, rendering only the necessary HTML",
+      "duration": 5,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '<div class=\"card-front\" style=\"background-image:url()\"></div>' to equal '<div class=\"card-front\" style=\"background-image:url(you spin me right round)\"></div>'",
+        "showDiff": true,
+        "actual": "<div class=\"card-front\" style=\"background-image:url()\"></div>",
+        "expected": "<div class=\"card-front\" style=\"background-image:url(you spin me right round)\"></div>",
+        "stack": "AssertionError: expected '<div class=\"card-front\" style=\"background-image:url()\"></div>' to equal '<div class=\"card-front\" style=\"background-image:url(you spin me right round)\"></div>'\n    at Context.<anonymous> (test/2-CardFront.test.js:15:33)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    },
+    {
+      "title": "correctly renders the title prop",
+      "fullTitle": "<CardBack /> correctly renders the title prop",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '' to include 'Rolling in the Deep'",
+        "showDiff": false,
+        "actual": "",
+        "stack": "AssertionError: expected '' to include 'Rolling in the Deep'\n    at Context.<anonymous> (test/3-CardBack.test.js:24:21)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    },
+    {
+      "title": "correctly renders the genres prop as comma seperated strings",
+      "fullTitle": "<CardBack /> correctly renders the genres prop as comma seperated strings",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '' to include 'Never gonna give you up, Never gonna let you down, Never gonna run around and desert you'",
+        "showDiff": false,
+        "actual": "",
+        "stack": "AssertionError: expected '' to include 'Never gonna give you up, Never gonna let you down, Never gonna run around and desert you'\n    at Context.<anonymous> (test/3-CardBack.test.js:28:21)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    },
+    {
+      "title": "renders 'No Rating Found' in an <h4> if the IMDBRating prop is null",
+      "fullTitle": "<CardBack /> renders 'No Rating Found' in an <h4> if the IMDBRating prop is null",
+      "duration": 5,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Method “text” is only meant to be run on a single node. 0 found instead.\n    at ShallowWrapper.single (node_modules/enzyme/build/ShallowWrapper.js:1618:17)\n    at ShallowWrapper.text (node_modules/enzyme/build/ShallowWrapper.js:844:21)\n    at Context.<anonymous> (test/3-CardBack.test.js:33:34)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "Method “text” is only meant to be run on a single node. 0 found instead."
+      }
+    },
+    {
+      "title": "renders an <img> tag if the IMDBRating prop is valid",
+      "fullTitle": "<CardBack /> renders an <img> tag if the IMDBRating prop is valid",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected false to equal true",
+        "showDiff": true,
+        "actual": "false",
+        "expected": "true",
+        "stack": "AssertionError: expected false to equal true\n    at Context.<anonymous> (test/3-CardBack.test.js:37:46)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    }
+  ],
+  "passes": []
+}
